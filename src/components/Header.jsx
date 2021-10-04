@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = (props) => (
+const Header = ({title, date}) => (
   <header>
     <div className="container">
       <div className="row">
@@ -10,7 +10,8 @@ const Header = (props) => (
             className="img-responsive logo-academy"
             src="/img/logo.png"/>
           <div className="intro-text">
-            <span className="skills">{props.title}</span>
+            <span className="skills">{title}</span><br/>
+            <span>{date}</span>
           </div>
         </div>
       </div>
