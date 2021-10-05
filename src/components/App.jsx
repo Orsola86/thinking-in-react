@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './Header';
-import NavBar from './NavBar';
 import Books from './Books';
 import About from './About';
 import Footer from './Footer';
+import NavBar from './NavBar';
 import Menu from './Menu';
+
+
 // ESERCIZIO PARTE 2: (Thinking in React)
 
 // - Aggiungere una "props" chiamata "title" al Componente "Header" che contenga il testo: "Welcome to React".
@@ -16,17 +18,20 @@ import Menu from './Menu';
 //          <a href="#">NOME DEL FILTRO</a>
 //       </li>
 
-
-
-
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+function menuOpen(){
+    setIsOpen(!isOpen)
+}
   
   return (   
     
     <div id="page-wrap">
-      <Menu />    
+      {isOpen && <Menu menuOpen={menuOpen} />}
+      <NavBar menuOpen={menuOpen} />,
       <Header title= "Welcome to React" date = {new Date().toLocaleDateString()}/>,
-      <NavBar />,
       <Books />,
       <About />,
       <Footer />

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
-const NavBar = () => (
+const NavBar = ({menuOpen}) => (
     <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
     <div className="container">
         <div className="navbar-header">
@@ -11,8 +11,8 @@ const NavBar = () => (
         </div>
         <ul className="nav navbar-nav pull-right">
         <li>
-            <button className="btn btn-lg btn-outline">
-            <i className="fa fa-graduation-cap" /> <span>Training</span>
+            <button className="btn btn-lg btn-outline" onClick={menuOpen}>
+            <i className="fa fa-graduation-cap" /> <span>Menu</span>
             </button>
         </li>
         </ul>

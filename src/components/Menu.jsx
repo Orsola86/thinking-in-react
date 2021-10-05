@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Menu = (props) => (
+const Menu = ({menuOpen}) => (
   <div className="overlay-menu">
     <h4>
       Close menu
-      <button className="btn-link" style={{ cursor: 'pointer' }}>
+      <button className="btn-link" style={{ cursor: 'pointer'}} onClick={menuOpen}>
         <i className="fa fa-close pull-right" />
       </button>
     </h4>
