@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 // - Aggiungere una "props" chiamata "title" al Componente "Header" che contenga il testo: "Welcome to React".
 // - Aggiungere un'altra props chiamata "date" al Componente "Header" che contenga la data di oggi (ricordatevi il metodo da appendere per stampare la Data come stringa) e mostrarla all'interno del componente.
-// - Creare un array di stringhe all'interno del componente "Books" con le seguenti 'All', 'Design', 'Mobile', 'DevOps', 'Essentials'. Iterare nell'array e stampare all'interno
+// - Creare un array di stringhe all'interno del componente "Books" con le seguenti "All", "Design", "Mobile", "DevOps", "Essentials". Iterare nell'array e stampare all'interno
 // del UL chiamato "nav.pills". La struttura dovrà essere la seguente "   
 
 //       <li>
@@ -17,7 +17,7 @@ import Footer from './Footer';
 //       </li>
 
 
-const categoriesBooks = ['All', 'Design', 'Mobile', 'DevOps','Essentials'];
+
 
 function App() {
   
@@ -26,7 +26,7 @@ function App() {
     <div id="page-wrap">
     <Header title= "Welcome to React" date = {new Date().toLocaleDateString()}/>,
     <NavBar />,
-    <Books categoriesBooks = {categoriesBooks}/>,
+    <Books />,
     <About />,
     <Footer />
     </div>

@@ -1,4 +1,7 @@
 import React from "react";
+import BooksFilter from "./BooksFilter";
+
+const filter = ['All', 'Design', 'Mobile', 'DevOps','Essentials'];
 
 const Books = ({categoriesBooks}) => (
    <section id="books">
@@ -11,13 +14,7 @@ const Books = ({categoriesBooks}) => (
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <ul className="nav nav-pills text-center"> 
-            {categoriesBooks.map((element, index) => (
-              <li key= {index}>
-                <a href="#">{element}</a>
-              </li>
-            ))}
-          </ul>
+          <BooksFilter booksFilter = {filter}/>
         </div>
       </div>
       <div className="row book-list">LIBRI</div>
