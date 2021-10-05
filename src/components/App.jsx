@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import Books from './Books';
 import About from './About';
 import Footer from './Footer';
-
+import Menu from './Menu';
 // ESERCIZIO PARTE 2: (Thinking in React)
 
 // - Aggiungere una "props" chiamata "title" al Componente "Header" che contenga il testo: "Welcome to React".
@@ -24,11 +24,12 @@ function App() {
   return (   
     
     <div id="page-wrap">
-    <Header title= "Welcome to React" date = {new Date().toLocaleDateString()}/>,
-    <NavBar />,
-    <Books />,
-    <About />,
-    <Footer />
+      <Menu />    
+      <Header title= "Welcome to React" date = {new Date().toLocaleDateString()}/>,
+      <NavBar />,
+      <Books />,
+      <About />,
+      <Footer />
     </div>
   )
 }

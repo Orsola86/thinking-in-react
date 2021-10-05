@@ -480,13 +480,6 @@ fieldset[disabled] .btn-success.active {
   padding-top: 60px;
 }
 
-#page-wrap > div:first-child {
-  position: absolute;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-}
-
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -501,4 +494,50 @@ fieldset[disabled] .btn-success.active {
 .btn-link {
   color: #B8B7AD;
   display: inline-block;
+}
+
+.overlay-menu {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1040;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.overlay-menu h4 {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.overlay-menu .fa-close:hover {
+  color: #61dafb;
+
+}
+
+.overlay-menu ul {
+  color: #61dafb;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.overlay-menu ul li a {
+  color: #61dafb;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
+.overlay-menu ul li a:hover {
+  color: white;
+
 }
