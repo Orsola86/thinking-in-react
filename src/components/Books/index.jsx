@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import BooksFilter from "./BooksFilter";
 import books from "../../mocks/books";
 import BooksList from "./BooksList";
+import axios, { Axios } from "axios";
 
 const Books = (props) => {
   const filters = ["All", "Design", "Mobile", "DevOps", "Essentials"];
-  const [stateBooks, setBooks] = useState(books);
+  const [stateBooks, setBooks] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState("All");
+
+  useEffect(() => {
+    async function fetchData() {
+      const result = await axios.get("http://localhost:9000/books");
+      return result;
+    }
+    fetchData().then((response) => setBooks(response.data));
+  }, []);
 
   function selectFilter(category) {
     setSelectedFilter(category);
