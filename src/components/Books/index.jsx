@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import BooksFilter from "./BooksFilter";
+import books from "../../mocks/books";
+import BooksList from "./BooksList";
 
-const filter = ['All', 'Design', 'Mobile', 'DevOps','Essentials'];
+const Books = (props) => {
+  const filters = ["All", "Design", "Mobile", "DevOps", "Essentials"];
+  const [stateBooks, setBooks] = useState(books);
+  const [selectedFilter, setSelectedFilter] = useState("All");
 
-const Books = ({categoriesBooks}) => (
-   <section id="books">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2>Books</h2>
-          <hr className="star-primary" />
+  function selectFilter(filter) {
+    setSelectedFilter(filter);
+    const filtered =
+      filter === "All"
+        ? books
+        : books.filter((book) => book.category === filter);
+    setBooks(filtered);
+  }
+
+  return (
+    <section id="books">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2>Books</h2>
+            <hr className="star-primary" />
+          </div>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <BooksFilter booksFilter = {filter}/>
+        <div className="row">
+          <div className="col-lg-12">
+            <BooksFilter
+              booksFilter={filters}
+              selectFilter={selectFilter}
+              selectedFilter={selectedFilter}
+            />
+          </div>
         </div>
+        <BooksList stateBooks={stateBooks} />
       </div>
-      <div className="row book-list">LIBRI</div>
-    </div>
-  </section>
-)
-
+    </section>
+  );
+};
 
 export default Books;

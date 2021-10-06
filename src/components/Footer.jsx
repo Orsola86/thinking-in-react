@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="text-center">
+  <footer className="text-center">
     <div className="footer-above">
       <div className="container">
         <div className="row">
@@ -61,6 +61,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
 export default Footer;

@@ -1,126 +1,126 @@
-const images = '/img/books'
+const images = "/img/books";
 
 const books = [
   {
     id: 1,
-    title: 'Design real life',
+    title: "Design real life",
     cover: `${images}/design-real-life.jpg`,
-    category: 'Design'
+    category: "Design",
   },
   {
     id: 2,
-    title: 'Learn design pattern',
+    title: "Learn design pattern",
     cover: `${images}/designpattern.jpg`,
-    category: 'Essentials'
+    category: "Essentials",
   },
   {
     id: 3,
-    title: 'Design SVG',
+    title: "Design SVG",
     cover: `${images}/design-svg.jpg`,
-    category: 'Design'
+    category: "Design",
   },
   {
     id: 4,
-    title: 'Learning React Native',
+    title: "Learning React Native",
     cover: `${images}/reactnative.jpg`,
-    category: 'Mobile'
+    category: "Mobile",
   },
   {
     id: 5,
-    title: 'React Native CookBook',
+    title: "React Native CookBook",
     cover: `${images}/react-native-cookbook.jpg`,
-    category: 'Mobile'
+    category: "Mobile",
   },
   {
     id: 6,
-    title: 'Bootstrap 4 Blueprints',
+    title: "Bootstrap 4 Blueprints",
     cover: `${images}/bootstrap4-blue.jpg`,
-    category: 'Ux'
+    category: "Ux",
   },
   {
     id: 7,
-    title: 'AWS System Administration',
+    title: "AWS System Administration",
     cover: `${images}/aws-admin.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 8,
-    title: 'Effective DevOps',
+    title: "Effective DevOps",
     cover: `${images}/effective-devops.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 9,
-    title: 'Kubernetes Up & Running',
+    title: "Kubernetes Up & Running",
     cover: `${images}/kubernetes.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 11,
-    title: 'Using Docker',
+    title: "Using Docker",
     cover: `${images}/using-docker.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 12,
-    title: 'Getting started React Native',
+    title: "Getting started React Native",
     cover: `${images}/get-start-react-native.jpg`,
-    category: 'Mobile'
+    category: "Mobile",
   },
   {
     id: 13,
-    title: 'The new CSS layout',
+    title: "The new CSS layout",
     cover: `${images}/design-layout.jpg`,
-    category: 'Design'
+    category: "Design",
   },
   {
     id: 14,
-    title: 'Design conversation',
+    title: "Design conversation",
     cover: `${images}/design-conversation.jpg`,
-    category: 'Design'
+    category: "Design",
   },
   {
     id: 15,
-    title: 'Fullstack React Native',
+    title: "Fullstack React Native",
     cover: `${images}/fullstack-react-native.jpg`,
-    category: 'Mobile'
+    category: "Mobile",
   },
   {
     id: 16,
-    title: 'Javascript Testing Jasmine',
+    title: "Javascript Testing Jasmine",
     cover: `${images}/test-jasmine.jpg`,
-    category: 'Test'
+    category: "Test",
   },
   {
     id: 17,
-    title: 'Eloquent Javascript',
+    title: "Eloquent Javascript",
     cover: `${images}/eloquent-js.jpg`,
-    category: 'Essentials'
+    category: "Essentials",
   },
   {
     id: 18,
-    title: 'Building Microservices',
+    title: "Building Microservices",
     cover: `${images}/microservices.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 19,
-    title: 'DevOps Handbook',
+    title: "DevOps Handbook",
     cover: `${images}/devops-handbook.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 20,
-    title: 'Setting up nginx',
+    title: "Setting up nginx",
     cover: `${images}/nginx.jpg`,
-    category: 'DevOps'
+    category: "DevOps",
   },
   {
     id: 21,
-    title: 'JavaScript for designer',
+    title: "JavaScript for designer",
     cover: `${images}/design-javascript.jpg`,
-    category: 'Design'
-  }
-]
+    category: "Design",
+  },
+];
 
-export default books
+export default books;

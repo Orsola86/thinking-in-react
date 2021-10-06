@@ -1,24 +1,22 @@
-import React, {useState} from 'react'
+import React from "react";
 
-
-const NavBar = ({menuOpen}) => (
-    <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
+const NavBar = ({ menuOpen }) => (
+  <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
     <div className="container">
-        <div className="navbar-header">
+      <div className="navbar-header">
         <a className="navbar-brand" href="/">
-            My Library
+          My Library
         </a>
-        </div>
-        <ul className="nav navbar-nav pull-right">
+      </div>
+      <ul className="nav navbar-nav pull-right">
         <li>
-            <button className="btn btn-lg btn-outline" onClick={menuOpen}>
+          <button className="btn btn-lg btn-outline" onClick={menuOpen}>
             <i className="fa fa-graduation-cap" /> <span>Menu</span>
-            </button>
+          </button>
         </li>
-        </ul>
+      </ul>
     </div>
-    </nav>
-)
+  </nav>
+);
 
 export default NavBar;
-      

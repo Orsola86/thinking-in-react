@@ -1,14 +1,13 @@
 import React from "react";
 
-const BooksFilter = (props) => (
-    <ul className="nav nav-pills text-center"> 
-    {props.booksFilter.map((element, index) => (
-      <li key= {index}>
-        <a href="#">{element}</a>
+const BooksFilter = ({ booksFilter, selectFilter }) => (
+  <ul className="nav nav-pills text-center">
+    {booksFilter.map((filter, index) => (
+      <li key={index} onClick={() => selectFilter(filter)}>
+        <a href="#0">{filter}</a>
       </li>
     ))}
   </ul>
-)
-
+);
 
 export default BooksFilter;
