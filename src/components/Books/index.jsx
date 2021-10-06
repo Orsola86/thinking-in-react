@@ -8,12 +8,12 @@ const Books = (props) => {
   const [stateBooks, setBooks] = useState(books);
   const [selectedFilter, setSelectedFilter] = useState("All");
 
-  function selectFilter(filter) {
-    setSelectedFilter(filter);
+  function selectFilter(category) {
+    setSelectedFilter(category);
     const filtered =
-      filter === "All"
+      category === "All"
         ? books
-        : books.filter((book) => book.category === filter);
+        : books.filter((book) => book.category === category);
     setBooks(filtered);
   }
 
